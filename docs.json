@@ -7,7 +7,7 @@
     "dark": "/logo/logo.gif",
     "href": "https://discord.gg/edates"
   },
-  "favicon": "/logo.gif",
+  "favicon": "/logo/logo.svg",
   "colors": {
     "primary": "#f0a6fd",
     "light": "#efdaf2",
