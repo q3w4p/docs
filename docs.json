@@ -48,6 +48,12 @@
             "pages": [
               "staff/policies/escalation"
             ]
+          },
+          {
+            "group": "Chain of Command",
+            "pages": [
+              "staff/policies-copied-1/staff-roster"
+            ]
           }
         ]
       }
