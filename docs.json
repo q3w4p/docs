@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "edates Staff Guide",
+  "name": "edates ! Staff Guidebook",
   "logo": {
     "light": "/logo/logo.gif",
     "dark": "/logo/logo.gif"
@@ -55,6 +55,28 @@
   "footer": {
     "socials": {
       "discord": "https://discord.gg/edates"
+    }
+  },
+  "description": "The offical guidebook for the discord.gg/edates Staff guide.",
+  "background": {
+    "color": {
+      "dark": "#f786eb"
+    },
+    "decoration": "grid"
+  },
+  "appearance": {
+    "default": "dark"
+  },
+  "thumbnails": {
+    "appearance": "dark"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "errors": {
+    "404": {
+      "title": "Sorry couldn't find that!",
+      "description": "Go back or contact goth (@nqeh) "
     }
   }
 }
