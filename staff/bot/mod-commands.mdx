@@ -1,0 +1,170 @@
+---
+title: "Moderation Commands"
+description: "Every bleed command you'll use as an edates staff member."
+icon: "terminal"
+---
+
+<Info>
+  Parameters in `[brackets]` are required. `(parentheses)` are optional.
+</Info>
+
+---
+
+## Check History
+
+Always run this first.
+
+```bash
+,history @user
+```
+
+---
+
+## Warn
+
+```bash
+,warn @user [reason]
+```
+
+```bash
+# Example
+,warn @user Spamming in #general
+```
+
+---
+
+## Timeout / Mute
+
+```bash
+,timeout @user [duration] [reason]
+```
+
+```bash
+# Examples
+,timeout @user 5m Hard-r bypass
+,timeout @user 1h Repeated extreme racism after warnings
+```
+
+To remove a timeout early:
+
+```bash
+,untimeout @user
+```
+
+---
+
+## Jail
+
+Restricts the member to the jail channel only.
+
+```bash
+,jail @user [reason]
+,jail @user [duration] [reason]
+```
+
+```bash
+# Examples
+,jail @user Soft gore
+,jail @user 2d Soft gore
+```
+
+To unjail:
+
+```bash
+,unjail @user (reason)
+```
+
+<Warning>
+  Jails may not be ended prematurely unless the member is proven innocent. Only Admin+ may interfere with another staff member's jail case.
+</Warning>
+
+---
+
+## Kick
+
+```bash
+,kick @user [reason]
+```
+
+---
+
+## Ban
+
+```bash
+,ban @user [reason]
+,ban @user [duration] [reason]
+```
+
+```bash
+# Examples
+,ban @user Gore
+,ban @user 7d Repeated offenses
+```
+
+To unban:
+
+```bash
+,unban @user (reason)
+```
+
+Ban by user ID (even if they've already left):
+
+```bash
+,hackban [user_id] [reason]
+```
+
+---
+
+## Purge Messages
+
+```bash
+,purge [amount]
+,purge @user [amount]
+```
+
+<Warning>
+  Purges are irreversible. Double-check the amount before running.
+</Warning>
+
+---
+
+## Lock Channel
+
+```bash
+,lock (channel) (reason)
+,unlock (channel)
+```
+
+---
+
+## Add a Note (Staff-only)
+
+Private notes visible only to staff.
+
+```bash
+,note add @user [note]
+,note list @user
+,note remove @user [note_id]
+```
+
+---
+
+## Duration Reference
+
+| Time | Value |
+|---|---|
+| 5 minutes | `5m` |
+| 10 minutes | `10m` |
+| 30 minutes | `30m` |
+| 1 hour | `1h` |
+| 10 hours | `10h` |
+| 1 day | `1d` |
+| 2 days | `2d` |
+| 3 days | `3d` |
+| 7 days | `7d` |
+
+---
+
+<Info>
+  For a full list of bleed commands visit [bleed.bot/commands](https://bleed.bot/commands) or run `,help` in Discord.
+</Info>

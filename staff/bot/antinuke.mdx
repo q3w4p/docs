@@ -1,0 +1,44 @@
+---
+title: "Anti-Nuke"
+description: "How bleed's anti-nuke system protects edates."
+icon: "shield-virus"
+---
+
+## What is Anti-Nuke?
+
+bleed's anti-nuke system detects and stops automated or coordinated attacks on the server — mass bans, mass channel deletions, mass role deletions, and bot raids. It's configured by the Head Admin.
+
+As a regular staff member, you don't configure this — but you should know how it works so you're not surprised if bleed takes automatic action.
+
+---
+
+## What it Protects Against
+
+| Threat | bleed Response |
+|---|---|
+| Mass bans (by a compromised account or bot) | Auto-revoke permissions / ban the attacker |
+| Mass channel/role deletion | Auto-restore + punish responsible account |
+| Bot raids | Auto-ban + lock joins |
+| Unauthorized bot additions | Alert + revoke |
+
+---
+
+## If a Raid Happens
+
+1. **Don't panic.** bleed will start acting automatically.
+2. Ping Head Admin immediately in the staff channel.
+3. If bleed isn't catching it fast enough, manually ban raid accounts using `,ban` or `,hackban`.
+4. Use `,lockdown` to prevent new members from joining if the raid is ongoing:
+
+```bash
+,lockdown
+,unlockdown   # when the raid is over
+```
+
+---
+
+## Configuration
+
+Only the Head Admin manages anti-nuke settings. If you believe settings need to be adjusted, raise it in the staff channel.
+
+For full documentation on bleed's anti-nuke system, see [docs.bleed.bot/security/antinuke](https://docs.bleed.bot/security/antinuke).
