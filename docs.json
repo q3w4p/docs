@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "edates Staff Guide",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo.gif",
+    "dark": "/logo/logo.gif"
   },
   "favicon": "/favicon.svg",
   "colors": {
