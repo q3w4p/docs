@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "sequoia",
+  "theme": "almond",
   "name": "edates ! Staff Guidebook",
   "logo": {
     "light": "/logo/logo.gif",
@@ -63,7 +63,7 @@
     "color": {
       "dark": "#000000"
     },
-    "decoration": "grid"
+    "decoration": "windows"
   },
   "appearance": {
     "default": "dark"
