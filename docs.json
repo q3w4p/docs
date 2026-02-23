@@ -6,10 +6,10 @@
     "light": "/logo/logo.gif",
     "dark": "/logo/logo.gif"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo.gif",
   "colors": {
     "primary": "#ef94ff",
-    "light": "#fc8181",
+    "light": "#efdaf2",
     "dark": "#efdaf2"
   },
   "navigation": {
