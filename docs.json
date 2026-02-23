@@ -3,8 +3,8 @@
   "theme": "maple",
   "name": "edates Staff Guide",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo.gif",
+    "dark": "/logo/logo.gif"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -54,7 +54,7 @@
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.gg/YOUR_INVITE"
+      "discord": "https://discord.gg/edates"
     }
   }
 }
