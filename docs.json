@@ -68,8 +68,7 @@
   "background": {
     "color": {
       "dark": "#000000"
-    },
-    "decoration": "gradient"
+    }
   },
   "appearance": {
     "default": "dark"
