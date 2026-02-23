@@ -4,13 +4,14 @@
   "name": "edates ! Staff Guidebook",
   "logo": {
     "light": "/logo/logo.gif",
-    "dark": "/logo/logo.gif"
+    "dark": "/logo/logo.gif",
+    "href": "https://discord.gg/edates"
   },
   "favicon": "/logo.gif",
   "colors": {
     "primary": "#ef94ff",
     "light": "#efdaf2",
-    "dark": "#efdaf2"
+    "dark": "#e063ff"
   },
   "navigation": {
     "tabs": [
