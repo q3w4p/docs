@@ -9,7 +9,7 @@
   },
   "favicon": "/logo/logo.svg",
   "colors": {
-    "primary": "#000000",
+    "primary": "#f789fa",
     "light": "#efdaf2",
     "dark": "#000000"
   },
@@ -61,7 +61,7 @@
   "description": "The offical guidebook for the discord.gg/edates Staff guide.",
   "background": {
     "color": {
-      "dark": "#f786eb"
+      "dark": "#000000"
     },
     "decoration": "grid"
   },
