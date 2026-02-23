@@ -36,19 +36,19 @@ Always run this first.
 ## Timeout / Mute
 
 ```bash
-,timeout @user [duration] [reason]
+,mute @user [duration] [reason]
 ```
 
 ```bash
 # Examples
-,timeout @user 5m Hard-r bypass
-,timeout @user 1h Repeated extreme racism after warnings
+,mute @user 5m Hard-r bypass
+,mute @user 1h Repeated extreme racism after warnings
 ```
 
 To remove a timeout early:
 
 ```bash
-,untimeout @user
+,unmute @user # use this only if you mistakenly muted a user
 ```
 
 ---
@@ -97,7 +97,7 @@ To unjail:
 
 ```bash
 # Examples
-,ban @user Gore
+,ban @user Gore # if no duration then its indefinite / permanant
 ,ban @user 7d Repeated offenses
 ```
 
@@ -110,7 +110,7 @@ To unban:
 Ban by user ID (even if they've already left):
 
 ```bash
-,hackban [user_id] [reason]
+,hackban [user_id] [reason] # also you can native just use ,ban
 ```
 
 ---
@@ -119,7 +119,7 @@ Ban by user ID (even if they've already left):
 
 ```bash
 ,purge [amount]
-,purge @user [amount]
+,purge @user [amount] 
 ```
 
 <Warning>
@@ -131,7 +131,7 @@ Ban by user ID (even if they've already left):
 ## Lock Channel
 
 ```bash
-,lock (channel) (reason)
+,lock (channel) (reason) # only use for raids
 ,unlock (channel)
 ```
 
@@ -151,20 +151,24 @@ Private notes visible only to staff.
 
 ## Duration Reference
 
-| Time | Value |
-|---|---|
-| 5 minutes | `5m` |
+| Time       | Value |
+| ---------- | ----- |
+| 5 minutes  | `5m`  |
 | 10 minutes | `10m` |
 | 30 minutes | `30m` |
-| 1 hour | `1h` |
-| 10 hours | `10h` |
-| 1 day | `1d` |
-| 2 days | `2d` |
-| 3 days | `3d` |
-| 7 days | `7d` |
+| 1 hour     | `1h`  |
+| 10 hours   | `10h` |
+| 1 day      | `1d`  |
+| 2 days     | `2d`  |
+| 3 days     | `3d`  |
+| 7 days     | `7d`  |
 
 ---
 
 <Info>
-  For a full list of bleed commands visit [bleed.bot/commands](https://bleed.bot/commands) or run `,help` in Discord.
+  If you're having an issue, feel free to contact @nqeh (goth).
 </Info>
+
+<Check>
+  Made with \<3 by goth (@nqeh)
+</Check>

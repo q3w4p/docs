@@ -45,7 +45,6 @@
           {
             "group": "Policies",
             "pages": [
-              "staff/policies/appeals",
               "staff/policies/escalation"
             ]
           }

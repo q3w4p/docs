@@ -6,34 +6,19 @@ icon: "clipboard"
 
 ## Automatic Logging
 
-bleed automatically sends a log to **#mod-log** for every formal action taken via the bot. Each entry includes the action, target user, moderator, reason, and timestamp.
+bleed automatically sends a log to **#log** for every formal action taken via the bot. Each entry includes the action, target user, moderator, reason, and timestamp.
 
 This is why **every command must include a reason.** A log with no reason tells us nothing.
 
-| Action | Auto-logged? |
-|---|---|
-| `,warn` | ✅ |
-| `,timeout` / `,mute` | ✅ |
-| `,jail` / `,unjail` | ✅ |
-| `,kick` | ✅ |
-| `,ban` / `,unban` | ✅ |
-| `,purge` | ✅ |
-| Verbal warning | ❌ Manual only |
-
----
-
-## Manual Logging
-
-For verbal warnings or situations that didn't require a bot action, post a brief note in **#staff-log**:
-
-```
-[DATE] Verbal Warning
-User: @username (ID)
-Reason: Brief description
-Action: Verbal warning in #channel-name
-```
-
-This builds a paper trail if the same member causes issues later.
+| Action               | Auto-logged?  |
+| -------------------- | ------------- |
+| `,warn`              | ✅             |
+| `,timeout` / `,mute` | ✅             |
+| `,jail` / `,unjail`  | ✅             |
+| `,kick`              | ✅             |
+| `,ban` / `,unban`    | ✅             |
+| `,purge`             | ✅             |
+| Verbal warning       | ❌ Manual only |
 
 ---
 
@@ -50,3 +35,7 @@ Always check this before taking action. A clean record warrants more leniency; a
 <Tip>
   When in doubt about what tier a member is on for a specific offense, check their history for past punishments with similar reasons.
 </Tip>
+
+<Check>
+  Made with \<3 by goth (@nqeh)
+</Check>
