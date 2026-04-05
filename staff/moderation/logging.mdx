@@ -8,17 +8,17 @@ icon: "clipboard"
 
 bleed automatically sends a log to **#log** for every formal action taken via the bot. Each entry includes the action, target user, moderator, reason, and timestamp.
 
-This is why **every command must include a reason.** A log with no reason tells us nothing.
+This is why **every command must include a reason.** A log with no reason is useless.
 
-| Action               | Auto-logged?  |
-| -------------------- | ------------- |
-| `,warn`              | ✅             |
-| `,timeout` / `,mute` | ✅             |
-| `,jail` / `,unjail`  | ✅             |
-| `,kick`              | ✅             |
-| `,ban` / `,unban`    | ✅             |
-| `,purge`             | ✅             |
-| Verbal warning       | ❌ Manual only |
+| Action | Auto-logged? |
+| --- | --- |
+| `,warn` | ✅ |
+| `,timeout` / `,mute` | ✅ |
+| `,jail` / `,unjail` | ✅ |
+| `,kick` | ✅ |
+| `,ban` / `,unban` | ✅ |
+| `,purge` | ✅ |
+| Verbal warning | ❌ Manual only |
 
 ---
 
@@ -28,14 +28,39 @@ This is why **every command must include a reason.** A log with no reason tells 
 ,history @user
 ```
 
-Always check this before taking action. A clean record warrants more leniency; a long history warrants going straight to the next tier.
+Always check this before taking action. A clean record warrants more leniency, a long history warrants going straight to the next tier.
+
+**What to look for:**
+
+- How many prior offenses, and for what?
+- How recent are they?
+- Are they escalating in severity?
+
+**Example:** A member about to get their third spam warn in two days should be muted instead — check the history and act accordingly.
+
+---
+
+## Manual Notes
+
+For situations that aren't captured by the bot (verbal warnings, context, suspicions), add a staff note:
+
+```bash
+,note add @user [note text]
+,note list @user
+```
+
+Use notes when:
+
+- You issued a verbal warning and want it on record
+- You have context that future mods should know about (e.g. "has an active jail appeal in progress")
+- Something suspicious happened but didn't warrant a formal action yet
 
 ---
 
 <Tip>
-  When in doubt about what tier a member is on for a specific offense, check their history for past punishments with similar reasons.
+  When in doubt about what tier a member is on, check their history for prior punishments with similar reasons — that tells you exactly where they are on the escalation ladder.
 </Tip>
 
 <Check>
-  Made with \<3 by goth (@nqeh)
+  Made with \<3 by @gjqg
 </Check>

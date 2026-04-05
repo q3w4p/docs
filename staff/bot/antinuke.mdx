@@ -6,7 +6,7 @@ icon: "shield-alert"
 
 ## What is Anti-Nuke?
 
-bleed's anti-nuke system detects and stops automated or coordinated attacks on the server --- mass bans, mass channel deletions, mass role deletions, and bot raids. It's configured by @nqeh (goth).
+bleed's anti-nuke system detects and stops automated or coordinated attacks on the server --- mass bans, mass channel deletions, mass role deletions, and bot raids. It's configured by @gjqg.
 
 As a regular staff member, you don't configure this --- but you should know how it works so you're not surprised if bleed takes automatic action.
 
@@ -14,21 +14,21 @@ As a regular staff member, you don't configure this --- but you should know how 
 
 ## What it Protects Against
 
-| Threat                                      | bleed Response                             |
-| ------------------------------------------- | ------------------------------------------ |
+| Threat | bleed Response |
+| --- | --- |
 | Mass bans (by a compromised account or bot) | Auto-revoke permissions / ban the attacker |
-| Mass channel/role deletion                  | Auto-restore + punish responsible account  |
-| Bot raids                                   | Auto-ban + lock joins                      |
-| Unauthorized bot additions                  | Alert + revoke                             |
+| Mass channel/role deletion | Auto-restore \+ punish responsible account |
+| Bot raids | Auto-ban \+ lock joins |
+| Unauthorized bot additions | Alert \+ revoke |
 
 ---
 
 ## If a Raid Happens
 
 1. **Don't panic.** bleed will start acting automatically.
-2. Ping Head Admin immediately in the staff channel.
-3. If bleed isn't catching it fast enough, manually ban raid accounts using `,ban` or `,hackban`.
-4. Use `,lockdown` to prevent new members from joining if the raid is ongoing:
+2. Ping Admin immediately in the staff channel.
+3. If bleed isn't catching it fast enough, manually ban raid accounts using `,ban`.
+4. Use `,lockdown` to prevent them from talking if the raid is ongoing:
 
 ```bash
 ,lockdown
@@ -39,10 +39,10 @@ As a regular staff member, you don't configure this --- but you should know how 
 
 ## Configuration
 
-Only @nqeh (goth) configures anti-nuke settings. If you believe settings need to be adjusted, raise it torward him in dm's
+Only @gjqg configures anti-nuke settings. If you believe settings need to be adjusted, raise it torward him in dm's
 
 For full documentation on bleed's anti-nuke system, see [docs.bleed.bot/security/antinuke](https://docs.bleed.bot/security/antinuke).
 
 <Check>
-  Made with \<3 by goth (@nqeh)
+  Made with \<3 by @gjqg
 </Check>

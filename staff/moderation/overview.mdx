@@ -1,6 +1,6 @@
 ---
 title: "Moderation Overview"
-description: "How to approach moderation in edates --- process, judgment, and flow."
+description: "How to approach moderation in edates — process, judgment, and flow."
 icon: "hammer"
 ---
 
@@ -8,19 +8,19 @@ icon: "hammer"
 
 <Steps>
   <Step title="Check History">
-    Before doing anything, run `,history @user`. Knowing their track record determines what punishment level they're at.
+    Before doing anything, run `,history @user`. Knowing their track record determines what punishment level they're at. A first offense and a fifth offense for the same thing are handled very differently.
   </Step>
   <Step title="Assess the Situation">
-    Is this a first offense or a pattern? Minor or severe? Is de-escalation an option before a formal action?
+    Is this a first offense or a pattern? Minor or severe? Is de-escalation an option? Not every situation needs a bot command — read the room first.
   </Step>
-  <Step title="Act with a Reason">
-    Issue the appropriate punishment via bleed. Always include a specific reason --- not just "rule break." Doing so in error may lead to repercussions.
+  <Step title="Act With a Reason">
+    Issue the appropriate punishment via bleed. Always include a specific reason. Example: `,mute @user 10m Repeated hard-r bypass after prior warn` — not just `,mute @user bad`.
   </Step>
   <Step title="Log It">
-    bleed auto-logs to #log. For **complex** situations, post in the staff channel.
+    bleed auto-logs to #log. For **complex** situations (e.g. ongoing beef, potential ban, or anything involving a minor), also post a note in the staff channel.
   </Step>
   <Step title="Escalate if Needed">
-    If the situation is beyond your permissions or unclear, ping Senior Staff or Admin. See the [Escalation Guide](/staff/policies/escalation).
+    If the situation is beyond your permissions or unclear, ping Senior Staff or Admin. See the [Escalation Guide](/staff/policies/escalation). Don't sit on it.
   </Step>
 </Steps>
 
@@ -28,19 +28,37 @@ icon: "hammer"
 
 ## Verbal Warnings vs. Formal Actions
 
-Not every situation requires a bot command. For minor, first-time offenses, a verbal warning in chat is enough:
+Not every situation requires a bot command. For minor, first-time offenses, a verbal warning in chat is fine:
 
-> "Hey @user, refrain from constant drama and argument with members."
+> "Hey @user, stop unneccessary beef."
 
-If the behavior continues after a verbal warning, use `,warn`. Verbal warnings are **not logged by the bot** --- post a note in the staff channel if it feels relevant or notable.
+If the behavior continues after a verbal warning, escalate to `,warn`. Verbal warnings **are not logged by the bot** — if it feels relevant, drop a note in the staff channel.
 
 ---
 
-## Handling Beef / Arguments
+## Real Scenarios
 
-Don't warn for regular beef unless it escalates. Your job is to **de-escalate first** --- step in, cool the situation down. If it goes too far or drags on:
+<AccordionGroup>
+  <Accordion title="Member spamming rapidly in gen chat">
+    Check history — first offense? Issue a verbal warning: _"Hey! please stop spamming its annoying!!"_ If it continues, `,warn @user Spam in chat after verbal warning`. Next offense: `,mute @user 5m Continued spam`.
+  </Accordion>
 
-- Issue 10-minute mutes to both parties, or just the person who keeps pushing it if the other has dropped it.
+  <Accordion title="Two members beefing in chat">
+    Don't warn straight away. Step in: _"Hey both of you, drop it."_ If one keeps going after the other has stopped: `,mute @instigator 10m Continued argument after warning`. If both keep going: mute both 10 minutes.
+  </Accordion>
+
+  <Accordion title="Someone posts an image that might be soft NSFW">
+    Check if it's borderline or clear. Borderline? Verbal warn and delete the image. Clear soft NSFW? `,warn @user Soft NSFW` and delete. If they keep posting: `,mute @user 10m Repeated soft NSFW after warning`.
+  </Accordion>
+
+  <Accordion title="Member posts a gore image">
+    No warning needed. `,ban @user Gore` immediately. If you don't have ban perms: `,jail @user Gore — ban pending` 
+  </Accordion>
+
+  <Accordion title="Someone uses the n-word or a bypass attempt">
+    `,mute @user 5m Hard-r bypass`. No prior warning needed this is a direct mute offense. Each repeat adds 5 minutes. Resets daily.
+  </Accordion>
+</AccordionGroup>
 
 ---
 
@@ -48,14 +66,14 @@ Don't warn for regular beef unless it escalates. Your job is to **de-escalate fi
 
 Some rules allow for leniency depending on context:
 
-- **Sexual convos** --- you may be lenient on conversations that aren't making others uncomfortable and aren't going too far. Use judgment.
-- **Talking about kirk** --- you do not need to punish talking about it. Only mute if they post an image, or go too far.
-- **DM leaks** --- technically allowed if both parties are fine with it and it doesn't violate ToS. Face leaks are not considered a leak if the person already posted that picture in the server themselves.
+- **Sexual convos** — you may be lenient if no one is uncomfortable and it isn't going too far. Use judgment.
+- **Talking about kirk** — you do not need to punish talk about it. Only mute if they post an image or go too far.
+- **DM leaks** — technically allowed if both parties are fine with it and it doesn't violate ToS. Face leaks are not considered a leak if the person already posted that picture in the server themselves.
 
 <Note>
   When in doubt on a leniency call, err on the side of a verbal warning and ask a Senior Mod or Admin for a second opinion.
 </Note>
 
 <Check>
-  Made with \<3 by goth (@nqeh)
+  Made with \<3 by @gjqg
 </Check>

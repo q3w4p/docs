@@ -35,6 +35,12 @@
             ]
           },
           {
+            "group": "Tickets",
+            "pages": [
+              "staff/tickets/overview"
+            ]
+          },
+          {
             "group": "Bleed Bot",
             "pages": [
               "staff/bot/overview",
@@ -52,7 +58,7 @@
           {
             "group": "Chain of Command",
             "pages": [
-              "staff/coc/staff-roster"
+              "staff/coc/staff-roster-copied-1"
             ]
           }
         ]
@@ -64,7 +70,7 @@
       "discord": "https://discord.gg/edates"
     }
   },
-  "description": "The offical guidebook for the discord.gg/edates Staff guide.",
+  "description": "The official guidebook for the discord.gg/edates Staff.",
   "background": {
     "color": {
       "dark": "#000000"
@@ -81,8 +87,8 @@
   },
   "errors": {
     "404": {
-      "title": "Sorry couldn't find that!",
-      "description": "Go back or contact goth (@nqeh) "
+      "title": "Sorry, couldn't find that!",
+      "description": "Go back or contact @gjqg in the staff channel."
     }
   }
 }
